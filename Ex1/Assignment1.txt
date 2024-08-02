@@ -1,0 +1,123 @@
+1. guest-imdu3r@admin123-VirtualBox:~$ man 6 intro
+
+	INTRO(6)                   Linux Programmer's Manual                  INTRO(6)
+
+	NAME
+	       intro - introduction to games
+
+	DESCRIPTION
+	       Section  6  of the manual describes all the games and funny little pro‐
+	       grams available on the system.
+
+	NOTES
+	   Authors and copyright conditions
+	       Look at the header of the manual page  source  for  the  author(s)  and
+	       copyright  conditions.   Note  that these can be different from page to
+	       page!
+
+	COLOPHON
+	       This page is part of release 4.04 of the Linux  man-pages  project.   A
+	       description  of  the project, information about reporting bugs, and the
+	       latest    version    of    this    page,    can     be     found     at
+	       http://www.kernel.org/doc/man-pages/.
+
+	Linux                             2007-10-23                          INTRO(6)
+
+	
+2. guest-imdu3r@admin123-VirtualBox:~$ pwd
+	/tmp/guest-imdu3r
+
+guest-imdu3r@admin123-VirtualBox:~$ pwd -P
+	/tmp/guest-imdu3r
+
+guest-imdu3r@admin123-VirtualBox:~$ pwd -L
+	/tmp/guest-imdu3r
+
+3. guest-imdu3r@admin123-VirtualBox:~$ who
+	guest-imdu3r tty7         2024-07-19 15:20 (:0)
+
+guest-imdu3r@admin123-VirtualBox:~$ whoami
+	guest-imdu3r
+
+guest-imdu3r@admin123-VirtualBox:~$ who -u
+	guest-imdu3r tty7         2024-07-19 15:20 00:50        1269 (:0)
+
+guest-imdu3r@admin123-VirtualBox:~$ who -uH
+	NAME     LINE         TIME             IDLE          PID COMMENT
+	guest-imdu3r tty7         2024-07-19 15:20 00:51        1269 (:0)
+
+4. guest-imdu3r@admin123-VirtualBox:~$ ls
+	Assignment1.txt  hello.txt  hp.txt  new2.txt  newfile.txt
+
+guest-imdu3r@admin123-VirtualBox:~$ ls -F
+	Assignment1.txt  hello.txt  hp.txt  new2.txt  newfile.txt
+
+guest-imdu3r@admin123-VirtualBox:~$ ls -l
+	total 448
+	-rw-rw-r-- 1 guest-imdu3r guest-imdu3r     40 Jul 19 15:52 Assignment1.txt
+	-rw-rw-r-- 1 guest-imdu3r guest-imdu3r     31 Jul 19 15:26 hello.txt
+	-rw-rw-r-- 1 guest-imdu3r guest-imdu3r 439742 Jul 19 15:43 hp.txt
+	-rw-rw-r-- 1 guest-imdu3r guest-imdu3r     31 Jul 19 15:26 new2.txt
+	-rw-rw-r-- 1 guest-imdu3r guest-imdu3r     75 Jul 19 15:41 newfile.txt
+
+guest-imdu3r@admin123-VirtualBox:~$ ls -a
+	.   Assignment1.txt  .config    hp.txt  .local    new2.txt     .swn  .swp
+	..  .cache           hello.txt  .i.swp  .mozilla  newfile.txt  .swo
+
+guest-imdu3r@admin123-VirtualBox:~$ ls -R
+	.:
+	Assignment1.txt  hello.txt  hp.txt  new2.txt  newfile.txt
+
+guest-imdu3r@admin123-VirtualBox:~$ ls *.txt
+	Assignment1.txt  hello.txt  hp.txt  new2.txt  newfile.txt
+guest-imdu3r@admin123-VirtualBox:~$ ls new*.txt
+	new2.txt  newfile.txt
+
+5. guest-imdu3r@admin123-VirtualBox:~$ ls
+	Assignment1.txt  hello.txt  hp.txt  new2.txt  newdir  newfile.txt
+
+guest-imdu3r@admin123-VirtualBox:~$ cd newdir
+
+guest-imdu3r@admin123-VirtualBox:~/newdir$ cd /
+
+guest-imdu3r@admin123-VirtualBox:/home$ cd ~
+
+guest-imdu3r@admin123-VirtualBox:~$ mkdir alter
+
+guest-imdu3r@admin123-VirtualBox:~$ cd newdir
+
+guest-imdu3r@admin123-VirtualBox:~/newdir$ cd ../alter
+
+guest-imdu3r@admin123-VirtualBox:~/alter$ mkdir new
+
+guest-imdu3r@admin123-VirtualBox:~/alter$ cd ./new
+
+6. guest-imdu3r@admin123-VirtualBox:~$ date +%R
+	16:22
+guest-imdu3r@admin123-VirtualBox:~$ date
+	Fri Jul 19 16:22:13 IST 2024
+
+7. guest-imdu3r@admin123-VirtualBox:~$ cal
+	     July 2024        
+	Su Mo Tu We Th Fr Sa  
+	    1  2  3  4  5  6  
+	 7  8  9 10 11 12 13  
+	14 15 16 17 18 19 20  
+	21 22 23 24 25 26 27  
+	28 29 30 31           
+                      
+8. guest-imdu3r@admin123-VirtualBox:~$ touch test.txt
+
+guest-imdu3r@admin123-VirtualBox:~$ touch test.txt -am
+
+guest-imdu3r@admin123-VirtualBox:~$ touch test1.txt test2.txtguest-imdu3r@admin123-VirtualBox:~$ touch test.txt -t 2407170815.24
+
+guest-imdu3r@admin123-VirtualBox:~$ touch test.txt -t 2407170815.24 -am
+
+guest-imdu3r@admin123-VirtualBox:~$ ls test.txt -l
+	-rw-rw-r-- 1 guest-imdu3r guest-imdu3r 0 Jul 17 08:15 test.txt
+
+9. guest-imdu3r@admin123-VirtualBox:~$ clear
+
+
+

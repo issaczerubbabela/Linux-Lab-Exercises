@@ -1,0 +1,638 @@
+1.
+guest-yxqi1h@admin123-VirtualBox:~$ cat new.txt
+	hello this is your captain speaking, hope you are all fine down there.
+
+guest-yxqi1h@admin123-VirtualBox:~$ ln new.txt newlink -s
+guest-yxqi1h@admin123-VirtualBox:~$ cat newlink
+	hello this is your captain speaking, hope you are all fine down there.
+guest-yxqi1h@admin123-VirtualBox:~$ ln test.txt tom.txt
+guest-yxqi1h@admin123-VirtualBox:~$ ls -i
+	 22 Desktop      6 examples.desktop   25 Public     372 tom.txt
+	 26 Documents   27 Music              24 Templates   29 Videos
+	 23 Downloads   28 Pictures          372 test.txt
+guest-yxqi1h@admin123-VirtualBox:~$ 
+
+2.
+guest-yxqi1h@admin123-VirtualBox:~$ ps -f
+	UID        PID  PPID  C STIME TTY          TIME CMD
+	guest-y+  3119  2312  0 15:22 pts/1    00:00:00 bash
+	guest-y+  3667  3119  0 15:34 pts/1    00:00:00 ps -f
+guest-yxqi1h@admin123-VirtualBox:~$ ps -p 3119
+	  PID TTY          TIME CMD
+	 3119 pts/1    00:00:00 bash
+guest-yxqi1h@admin123-VirtualBox:~$ ps -L
+	  PID   LWP TTY          TIME CMD
+	 3119  3119 pts/1    00:00:00 bash
+	 3661  3661 pts/1    00:00:00 ps
+guest-yxqi1h@admin123-VirtualBox:~$ ps
+	  PID TTY          TIME CMD
+	 3119 pts/1    00:00:00 bash
+	 3657 pts/1    00:00:00 ps
+guest-yxqi1h@admin123-VirtualBox:~$ ps -A
+	  PID TTY          TIME CMD
+	    1 ?        00:00:00 systemd
+	    2 ?        00:00:00 kthreadd
+	    4 ?        00:00:00 kworker/0:0H
+	    5 ?        00:00:00 kworker/u6:0
+	    6 ?        00:00:00 mm_percpu_wq
+	    7 ?        00:00:00 ksoftirqd/0
+	    8 ?        00:00:00 rcu_sched
+	    9 ?        00:00:00 rcu_bh
+	   10 ?        00:00:00 migration/0
+	   11 ?        00:00:00 watchdog/0
+	   12 ?        00:00:00 cpuhp/0
+	   13 ?        00:00:00 cpuhp/1
+	   14 ?        00:00:00 watchdog/1
+	   15 ?        00:00:00 migration/1
+	   16 ?        00:00:00 ksoftirqd/1
+	   18 ?        00:00:00 kworker/1:0H
+	   19 ?        00:00:00 cpuhp/2
+	   20 ?        00:00:00 watchdog/2
+	   21 ?        00:00:00 migration/2
+	   22 ?        00:00:00 ksoftirqd/2
+	   24 ?        00:00:00 kworker/2:0H
+	   25 ?        00:00:00 kdevtmpfs
+	   26 ?        00:00:00 netns
+	   27 ?        00:00:00 rcu_tasks_kthre
+	   28 ?        00:00:00 kauditd
+	   29 ?        00:00:00 kworker/0:1
+	   30 ?        00:00:00 khungtaskd
+	   31 ?        00:00:00 oom_reaper
+	   32 ?        00:00:00 writeback
+	   33 ?        00:00:00 kcompactd0
+	   34 ?        00:00:00 ksmd
+	   35 ?        00:00:00 khugepaged
+	   36 ?        00:00:00 crypto
+	   37 ?        00:00:00 kintegrityd
+	   38 ?        00:00:00 kblockd
+	   39 ?        00:00:00 ata_sff
+	   40 ?        00:00:00 md
+	   41 ?        00:00:00 edac-poller
+	   42 ?        00:00:00 devfreq_wq
+	   43 ?        00:00:00 watchdogd
+	   44 ?        00:00:00 kworker/u6:1
+	   46 ?        00:00:00 kswapd0
+	   47 ?        00:00:00 kworker/u7:0
+	   48 ?        00:00:00 ecryptfs-kthrea
+	   53 ?        00:00:00 kworker/1:1
+	   91 ?        00:00:00 kthrotld
+	   92 ?        00:00:00 acpi_thermal_pm
+	   93 ?        00:00:00 scsi_eh_0
+	   94 ?        00:00:00 scsi_tmf_0
+	   95 ?        00:00:00 scsi_eh_1
+	   96 ?        00:00:00 scsi_tmf_1
+	  102 ?        00:00:00 ipv6_addrconf
+	  109 ?        00:00:00 kworker/2:1
+	  112 ?        00:00:00 kstrp
+	  129 ?        00:00:00 charger_manager
+	  130 ?        00:00:00 kworker/0:2
+	  186 ?        00:00:00 scsi_eh_2
+	  187 ?        00:00:00 scsi_tmf_2
+	  188 ?        00:00:00 kworker/1:1H
+	  190 ?        00:00:00 kworker/2:1H
+	  210 ?        00:00:00 kworker/0:1H
+	  213 ?        00:00:00 jbd2/sda1-8
+	  214 ?        00:00:00 ext4-rsv-conver
+	  245 ?        00:00:00 systemd-journal
+	  285 ?        00:00:00 systemd-udevd
+	  326 ?        00:00:00 systemd-timesyn
+	  348 ?        00:00:00 ttm_swap
+	  395 ?        00:00:00 iprt-VBoxWQueue
+	  638 ?        00:00:00 rsyslogd
+	  652 ?        00:00:00 accounts-daemon
+	  657 ?        00:00:00 cron
+	  661 ?        00:00:00 systemd-logind
+	  665 ?        00:00:00 acpid
+	  667 ?        00:00:00 dbus-daemon
+	  681 ?        00:00:00 NetworkManager
+	  682 ?        00:00:00 avahi-daemon
+	  708 ?        00:00:00 polkitd
+	  739 ?        00:00:00 avahi-daemon
+	  785 ?        00:00:00 irqbalance
+	  798 ?        00:00:00 lightdm
+	  831 tty7     00:00:22 Xorg
+	  857 ?        00:00:00 dhclient
+	  879 ?        00:00:00 dnsmasq
+	 1152 ?        00:00:00 upowerd
+	 1183 ?        00:00:00 colord
+	 1184 ?        00:00:00 rtkit-daemon
+	 1252 ?        00:00:00 lightdm
+	 1260 ?        00:00:00 systemd
+	 1262 ?        00:00:00 (sd-pam)
+	 1265 ?        00:00:00 upstart
+	 1354 ?        00:00:00 upstart-udev-br
+	 1355 ?        00:00:00 dbus-daemon
+	 1367 ?        00:00:00 window-stack-br
+	 1396 ?        00:00:00 upstart-dbus-br
+	 1402 ?        00:00:00 ssh-agent
+	 1409 ?        00:00:00 upstart-dbus-br
+	 1413 ?        00:00:00 upstart-file-br
+	 1425 ?        00:00:00 bamfdaemon
+	 1430 ?        00:00:00 at-spi-bus-laun
+	 1440 ?        00:00:00 dbus-daemon
+	 1443 ?        00:00:00 at-spi2-registr
+	 1445 ?        00:00:00 gvfsd
+	 1457 ?        00:00:00 dconf-service
+	 1473 ?        00:00:00 ibus-ui-gtk3
+	 1510 ?        00:00:00 whoopsie
+	 1517 tty1     00:00:00 agetty
+	 1706 ?        00:00:00 hud-service
+	 1708 ?        00:00:00 unity-settings-
+	 1719 ?        00:00:00 gnome-session-b
+	 1729 ?        00:00:00 unity-panel-ser
+	 1789 ?        00:00:00 pulseaudio
+	 1794 ?        00:00:00 indicator-messa
+	 1795 ?        00:00:00 indicator-bluet
+	 1796 ?        00:00:00 indicator-power
+	 1797 ?        00:00:00 indicator-datet
+	 1802 ?        00:00:00 indicator-keybo
+	 1803 ?        00:00:00 indicator-sound
+	 1806 ?        00:00:00 indicator-print
+	 1807 ?        00:00:00 indicator-sessi
+	 1833 ?        00:00:00 indicator-appli
+	 1913 ?        00:00:00 evolution-sourc
+	 1952 ?        00:00:00 unity-fallback-
+	 1961 ?        00:00:00 evolution-calen
+	 1981 ?        00:00:00 nm-applet
+	 1982 ?        00:00:02 nautilus
+	 1992 ?        00:01:35 compiz
+	 2000 ?        00:00:02 gnome-software
+	 2003 ?        00:00:00 evolution-calen
+	 2025 ?        00:00:00 gvfs-udisks2-vo
+	 2048 ?        00:00:00 evolution-addre
+	 2050 ?        00:00:00 evolution-calen
+	 2065 ?        00:00:00 gvfsd-metadata
+	 2071 ?        00:00:00 evolution-addre
+	 2077 ?        00:00:00 udisksd
+	 2081 ?        00:00:01 fwupd
+	 2099 ?        00:00:00 gvfs-mtp-volume
+	 2104 ?        00:00:00 gvfs-afc-volume
+	 2110 ?        00:00:00 gvfs-gphoto2-vo
+	 2115 ?        00:00:00 gvfs-goa-volume
+	 2126 ?        00:00:00 gvfsd-trash
+	 2264 ?        00:00:00 zeitgeist-datah
+	 2271 ?        00:00:00 sh
+	 2275 ?        00:00:00 zeitgeist-daemo
+	 2282 ?        00:00:00 zeitgeist-fts
+	 2312 ?        00:00:01 gnome-terminal-
+	 2320 ?        00:00:00 gconfd-2
+	 2323 pts/18   00:00:00 bash
+	 2342 ?        00:00:43 firefox
+	 2445 ?        00:00:00 WebExtensions
+	 2474 ?        00:00:01 Privileged Cont
+	 2622 ?        00:00:07 Web Content
+	 2719 ?        00:00:10 Web Content
+	 2775 ?        00:00:00 RDD Process
+	 3095 ?        00:00:00 deja-dup-monito
+	 3104 pts/18   00:00:00 gedit
+	 3119 pts/1    00:00:00 bash
+	 3340 ?        00:00:00 cupsd
+	 3341 ?        00:00:00 cups-browsed
+	 3342 ?        00:00:00 dbus
+	 3464 ?        00:00:00 gvfsd-network
+	 3492 ?        00:00:00 gvfsd-dnssd
+	 3499 ?        00:00:00 kworker/2:0
+	 3502 ?        00:00:00 kworker/1:0
+	 3505 ?        00:00:00 gvfsd-smb
+	 3594 ?        00:00:00 Web Content
+	 3636 ?        00:00:00 kworker/0:0
+	 3652 ?        00:00:00 kworker/u6:2
+	 3659 pts/1    00:00:00 ps
+guest-yxqi1h@admin123-VirtualBox:~$ ps -H
+	  PID TTY          TIME CMD
+	 3119 pts/1    00:00:00 bash
+	3660 pts/1    00:00:00   ps
+
+3.
+guest-yxqi1h@admin123-VirtualBox:~$ top
+	top - 15:36:58 up 16 min,  1 user,  load average: 0.23, 0.32, 0.27
+	Tasks: 168 total,   3 running, 124 sleeping,   0 stopped,   0 zombie
+	%Cpu(s): 14.7 us,  2.2 sy,  0.0 ni, 83.0 id,  0.0 wa,  0.0 hi,  0.1 si,  0.0 st
+	KiB Mem :  4039076 total,  1442912 free,  1308508 used,  1287656 buff/cache
+	KiB Swap:   998396 total,   998396 free,        0 used.  2313788 avail Mem 
+
+	  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     
+	 1992 guest-y+  20   0 1374364 221020  81984 S  45.2  5.5   2:19.15 compiz      
+	  831 root      20   0       0      0      0 S  10.3  0.0   0:33.07 Xorg        
+	 3104 guest-y+  20   0  581852  36540  29012 S   2.7  0.9   0:03.47 gedit       
+	 2312 guest-y+  20   0  587660  36572  28384 S   1.0  0.9   0:02.73 gnome-term+ 
+	 2719 guest-y+  20   0 2737356 195972 101388 S   0.7  4.9   0:12.93 Web Content 
+	 1729 guest-y+  20   0  786804  33516  25476 S   0.3  0.8   0:00.42 unity-pane+ 
+	    1 root      20   0       0      0      0 S   0.0  0.0   0:00.90 systemd     
+	    2 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kthreadd    
+	    4 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 kworker/0:+ 
+	    5 root      20   0       0      0      0 I   0.0  0.0   0:00.08 kworker/u6+ 
+	    6 root       0 -20       0      0      0 I   0.0  0.0   0:00.00 mm_percpu_+ 
+	    7 root      20   0       0      0      0 S   0.0  0.0   0:00.01 ksoftirqd/0 
+	    8 root      20   0       0      0      0 I   0.0  0.0   0:00.14 rcu_sched   
+	    9 root      20   0       0      0      0 I   0.0  0.0   0:00.00 rcu_bh      
+	   10 root      rt   0       0      0      0 S   0.0  0.0   0:00.00 migration/0 
+	   11 root      rt   0       0      0      0 S   0.0  0.0   0:00.00 watchdog/0  
+	   12 root      20   0       0      0      0 S   0.0  0.0   0:00.00 cpuhp/0  
+
+4.
+guest-yxqi1h@admin123-VirtualBox:~$ killall gedit
+guest-yxqi1h@admin123-VirtualBox:~$ kill 3119
+
+5.
+guest-yxqi1h@admin123-VirtualBox:~$ mount
+	sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+	proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+	udev on /dev type devtmpfs (rw,nosuid,relatime,size=1988760k,nr_inodes=497190,mode=755)
+	devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+	tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=403908k,mode=755)
+	/dev/sda1 on / type ext4 (rw,relatime,errors=remount-ro,data=ordered)
+	securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+	tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+	tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+	tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+	cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/lib/systemd/systemd-cgroups-agent,name=systemd)
+	pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+	cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+	cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+	cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+	cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
+	cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+	cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,hugetlb)
+	cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
+	cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+	cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+	cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+	cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+	systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=29,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=12573)
+	mqueue on /dev/mqueue type mqueue (rw,relatime)
+	debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+	hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
+	fusectl on /sys/fs/fuse/connections type fusectl (rw,relatime)
+	configfs on /sys/kernel/config type configfs (rw,relatime)
+	none on /tmp/guest-yxqi1h type tmpfs (rw,relatime,mode=700,uid=925)
+	tmpfs on /run/user/925 type tmpfs (rw,nosuid,nodev,relatime,size=403908k,mode=700,uid=925,gid=925)
+
+6.
+guest-yxqi1h@admin123-VirtualBox:~$ df
+	Filesystem     1K-blocks    Used Available Use% Mounted on
+	udev             1988760       0   1988760   0% /dev
+	tmpfs             403908    5976    397932   2% /run
+	/dev/sda1       41144640 5786376  33245192  15% /
+	tmpfs            2019536     208   2019328   1% /dev/shm
+	tmpfs               5120       4      5116   1% /run/lock
+	tmpfs            2019536       0   2019536   0% /sys/fs/cgroup
+	none             2019536  107536   1912000   6% /tmp/guest-yxqi1h
+	tmpfs             403908      96    403812   1% /run/user/925
+
+7.
+guest-yxqi1h@admin123-VirtualBox:~$ du
+	0	./.nano
+	0	./.mozilla/systemextensionsdev
+	0	./.mozilla/extensions
+	4	./.mozilla/firefox/8hpikzaj.default
+	16	./.mozilla/firefox/oj8oro49.default-release/features/{34f25a41-cba9-495f-9325-41e500c74897}
+	16	./.mozilla/firefox/oj8oro49.default-release/features
+	1356	./.mozilla/firefox/oj8oro49.default-release/gmp-gmpopenh264/1.8.1.2
+	1356	./.mozilla/firefox/oj8oro49.default-release/gmp-gmpopenh264
+	48	./.mozilla/firefox/oj8oro49.default-release/sessionstore-backups
+	32	./.mozilla/firefox/oj8oro49.default-release/datareporting/archived/2024-07
+	32	./.mozilla/firefox/oj8oro49.default-release/datareporting/archived
+	0	./.mozilla/firefox/oj8oro49.default-release/datareporting/glean/events
+	4	./.mozilla/firefox/oj8oro49.default-release/datareporting/glean/db
+	4	./.mozilla/firefox/oj8oro49.default-release/datareporting/glean
+	136	./.mozilla/firefox/oj8oro49.default-release/datareporting
+	0	./.mozilla/firefox/oj8oro49.default-release/bookmarkbackups
+	3264	./.mozilla/firefox/oj8oro49.default-release/security_state
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/default/https+++www.youtube.com/cache/morgue
+	60	./.mozilla/firefox/oj8oro49.default-release/storage/default/https+++www.youtube.com/cache
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/default/https+++www.youtube.com/idb/361758381LCo7g%sCD7a%t1a3b2a8s.files
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/default/https+++www.youtube.com/idb/2171031483YattIedMb.files
+	96	./.mozilla/firefox/oj8oro49.default-release/storage/default/https+++www.youtube.com/idb
+	160	./.mozilla/firefox/oj8oro49.default-release/storage/default/https+++www.youtube.com
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/default/moz-extension+++e934132d-15cb-4255-a094-781820406424^userContextId=4294967295/idb/3647222921wleabcEoxlt-eengsairo.files
+	44	./.mozilla/firefox/oj8oro49.default-release/storage/default/moz-extension+++e934132d-15cb-4255-a094-781820406424^userContextId=4294967295/idb
+	48	./.mozilla/firefox/oj8oro49.default-release/storage/default/moz-extension+++e934132d-15cb-4255-a094-781820406424^userContextId=4294967295
+	208	./.mozilla/firefox/oj8oro49.default-release/storage/default
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/temporary
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome/idb/2823318777ntouromlalnodry--naod.files
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome/idb/2918063365piupsah.files
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome/idb/1657114595AmcateirvtiSty.files
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome/idb/1451318868ntouromlalnodry--epcr.files
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome/idb/3561288849sdhlie.files
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.files/journals
+	812	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.files
+	11076	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome/idb
+	11080	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome
+	11080	./.mozilla/firefox/oj8oro49.default-release/storage/permanent
+	11288	./.mozilla/firefox/oj8oro49.default-release/storage
+	0	./.mozilla/firefox/oj8oro49.default-release/crashes/events
+	4	./.mozilla/firefox/oj8oro49.default-release/crashes
+	0	./.mozilla/firefox/oj8oro49.default-release/minidumps
+	33588	./.mozilla/firefox/oj8oro49.default-release
+	0	./.mozilla/firefox/Pending Pings
+	0	./.mozilla/firefox/Crash Reports/events
+	4	./.mozilla/firefox/Crash Reports
+	33604	./.mozilla/firefox
+	33604	./.mozilla
+	0	./.gconf
+	100	./.local/share/zeitgeist/fts.index
+	224	./.local/share/zeitgeist
+	0	./.local/share/nautilus/scripts
+	0	./.local/share/nautilus
+	108	./.local/share/gvfs-metadata
+	4	./.local/share/evolution/tasks/system
+	0	./.local/share/evolution/tasks/trash
+	4	./.local/share/evolution/tasks
+	0	./.local/share/evolution/memos/trash
+	0	./.local/share/evolution/memos
+	0	./.local/share/evolution/mail/trash
+	0	./.local/share/evolution/mail
+	4	./.local/share/evolution/calendar/system
+	0	./.local/share/evolution/calendar/trash
+	4	./.local/share/evolution/calendar
+	0	./.local/share/evolution/addressbook/system/photos
+	24	./.local/share/evolution/addressbook/system
+	0	./.local/share/evolution/addressbook/trash
+	24	./.local/share/evolution/addressbook
+	32	./.local/share/evolution
+	0	./.local/share/unity-settings-daemon
+	4	./.local/share/icc
+	0	./.local/share/sounds
+	0	./.local/share/applications
+	380	./.local/share
+	380	./.local
+	0	./.gnupg/private-keys-v1.d
+	0	./.gnupg
+	0	./Videos
+	0	./Pictures
+	0	./Music
+	0	./Documents
+	0	./Public
+	0	./Templates
+	0	./Downloads
+	0	./Desktop
+	8	./.kde/share/config
+	8	./.kde/share
+	8	./.kde
+	4	./.cache/logrotate
+	8	./.cache/fontconfig
+	0	./.cache/mozilla/firefox/8hpikzaj.default
+	12660	./.cache/mozilla/firefox/oj8oro49.default-release/safebrowsing/google4
+	14728	./.cache/mozilla/firefox/oj8oro49.default-release/safebrowsing
+	8	./.cache/mozilla/firefox/oj8oro49.default-release/settings/main/ms-language-packs
+	8	./.cache/mozilla/firefox/oj8oro49.default-release/settings/main
+	8	./.cache/mozilla/firefox/oj8oro49.default-release/settings
+	96	./.cache/mozilla/firefox/oj8oro49.default-release/thumbnails
+	20	./.cache/mozilla/firefox/oj8oro49.default-release/cache2/doomed
+	39864	./.cache/mozilla/firefox/oj8oro49.default-release/cache2/entries
+	39968	./.cache/mozilla/firefox/oj8oro49.default-release/cache2
+	15664	./.cache/mozilla/firefox/oj8oro49.default-release/startupCache
+	70492	./.cache/mozilla/firefox/oj8oro49.default-release
+	70492	./.cache/mozilla/firefox
+	70492	./.cache/mozilla
+	948	./.cache/gnome-software/3.20/firmware
+	948	./.cache/gnome-software/3.20
+	948	./.cache/gnome-software
+	532	./.cache/wallpaper
+	848	./.cache/gstreamer-1.0
+	0	./.cache/evolution/tasks/trash
+	0	./.cache/evolution/tasks
+	0	./.cache/evolution/sources/trash
+	0	./.cache/evolution/sources
+	0	./.cache/evolution/memos/trash
+	0	./.cache/evolution/memos
+	0	./.cache/evolution/mail/trash
+	0	./.cache/evolution/mail
+	0	./.cache/evolution/calendar/trash
+	0	./.cache/evolution/calendar
+	0	./.cache/evolution/addressbook/trash
+	0	./.cache/evolution/addressbook
+	0	./.cache/evolution
+	160	./.cache/compizconfig-1
+	16	./.cache/ibus/bus
+	16	./.cache/ibus
+	76	./.cache/upstart
+	0	./.cache/unity
+	73084	./.cache
+	20	./.config/nautilus
+	4	./.config/evolution/sources
+	4	./.config/evolution
+	12	./.config/libaccounts-glib
+	0	./.config/gnome-session/saved-session
+	0	./.config/gnome-session
+	72	./.config/pulse
+	8	./.config/compiz-1/compizconfig
+	8	./.config/compiz-1
+	0	./.config/unity
+	4	./.config/ibus/bus
+	4	./.config/ibus
+	20	./.config/dconf
+	0	./.config/upstart
+	20	./.config/autostart
+	168	./.config
+	107284	.
+
+guest-yxqi1h@admin123-VirtualBox:~$ du -ch
+	0	./.nano
+	0	./.mozilla/systemextensionsdev
+	0	./.mozilla/extensions
+	4.0K	./.mozilla/firefox/8hpikzaj.default
+	16K	./.mozilla/firefox/oj8oro49.default-release/features/{34f25a41-cba9-495f-9325-41e500c74897}
+	16K	./.mozilla/firefox/oj8oro49.default-release/features
+	1.4M	./.mozilla/firefox/oj8oro49.default-release/gmp-gmpopenh264/1.8.1.2
+	1.4M	./.mozilla/firefox/oj8oro49.default-release/gmp-gmpopenh264
+	48K	./.mozilla/firefox/oj8oro49.default-release/sessionstore-backups
+	32K	./.mozilla/firefox/oj8oro49.default-release/datareporting/archived/2024-07
+	32K	./.mozilla/firefox/oj8oro49.default-release/datareporting/archived
+	0	./.mozilla/firefox/oj8oro49.default-release/datareporting/glean/events
+	4.0K	./.mozilla/firefox/oj8oro49.default-release/datareporting/glean/db
+	4.0K	./.mozilla/firefox/oj8oro49.default-release/datareporting/glean
+	136K	./.mozilla/firefox/oj8oro49.default-release/datareporting
+	0	./.mozilla/firefox/oj8oro49.default-release/bookmarkbackups
+	3.2M	./.mozilla/firefox/oj8oro49.default-release/security_state
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/default/https+++www.youtube.com/cache/morgue
+	60K	./.mozilla/firefox/oj8oro49.default-release/storage/default/https+++www.youtube.com/cache
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/default/https+++www.youtube.com/idb/361758381LCo7g%sCD7a%t1a3b2a8s.files
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/default/https+++www.youtube.com/idb/2171031483YattIedMb.files
+	96K	./.mozilla/firefox/oj8oro49.default-release/storage/default/https+++www.youtube.com/idb
+	160K	./.mozilla/firefox/oj8oro49.default-release/storage/default/https+++www.youtube.com
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/default/moz-extension+++e934132d-15cb-4255-a094-781820406424^userContextId=4294967295/idb/3647222921wleabcEoxlt-eengsairo.files
+	44K	./.mozilla/firefox/oj8oro49.default-release/storage/default/moz-extension+++e934132d-15cb-4255-a094-781820406424^userContextId=4294967295/idb
+	48K	./.mozilla/firefox/oj8oro49.default-release/storage/default/moz-extension+++e934132d-15cb-4255-a094-781820406424^userContextId=4294967295
+	208K	./.mozilla/firefox/oj8oro49.default-release/storage/default
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/temporary
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome/idb/2823318777ntouromlalnodry--naod.files
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome/idb/2918063365piupsah.files
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome/idb/1657114595AmcateirvtiSty.files
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome/idb/1451318868ntouromlalnodry--epcr.files
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome/idb/3561288849sdhlie.files
+	0	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.files/journals
+	812K	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.files
+	11M	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome/idb
+	11M	./.mozilla/firefox/oj8oro49.default-release/storage/permanent/chrome
+	11M	./.mozilla/firefox/oj8oro49.default-release/storage/permanent
+	12M	./.mozilla/firefox/oj8oro49.default-release/storage
+	0	./.mozilla/firefox/oj8oro49.default-release/crashes/events
+	4.0K	./.mozilla/firefox/oj8oro49.default-release/crashes
+	0	./.mozilla/firefox/oj8oro49.default-release/minidumps
+	33M	./.mozilla/firefox/oj8oro49.default-release
+	0	./.mozilla/firefox/Pending Pings
+	0	./.mozilla/firefox/Crash Reports/events
+	4.0K	./.mozilla/firefox/Crash Reports
+	33M	./.mozilla/firefox
+	33M	./.mozilla
+	0	./.gconf
+	100K	./.local/share/zeitgeist/fts.index
+	224K	./.local/share/zeitgeist
+	0	./.local/share/nautilus/scripts
+	0	./.local/share/nautilus
+	108K	./.local/share/gvfs-metadata
+	4.0K	./.local/share/evolution/tasks/system
+	0	./.local/share/evolution/tasks/trash
+	4.0K	./.local/share/evolution/tasks
+	0	./.local/share/evolution/memos/trash
+	0	./.local/share/evolution/memos
+	0	./.local/share/evolution/mail/trash
+	0	./.local/share/evolution/mail
+	4.0K	./.local/share/evolution/calendar/system
+	0	./.local/share/evolution/calendar/trash
+	4.0K	./.local/share/evolution/calendar
+	0	./.local/share/evolution/addressbook/system/photos
+	24K	./.local/share/evolution/addressbook/system
+	0	./.local/share/evolution/addressbook/trash
+	24K	./.local/share/evolution/addressbook
+	32K	./.local/share/evolution
+	0	./.local/share/unity-settings-daemon
+	4.0K	./.local/share/icc
+	0	./.local/share/sounds
+	0	./.local/share/applications
+	380K	./.local/share
+	380K	./.local
+	0	./.gnupg/private-keys-v1.d
+	0	./.gnupg
+	0	./Videos
+	0	./Pictures
+	0	./Music
+	0	./Documents
+	0	./Public
+	0	./Templates
+	0	./Downloads
+	0	./Desktop
+	8.0K	./.kde/share/config
+	8.0K	./.kde/share
+	8.0K	./.kde
+	4.0K	./.cache/logrotate
+	8.0K	./.cache/fontconfig
+	0	./.cache/mozilla/firefox/8hpikzaj.default
+	13M	./.cache/mozilla/firefox/oj8oro49.default-release/safebrowsing/google4
+	15M	./.cache/mozilla/firefox/oj8oro49.default-release/safebrowsing
+	8.0K	./.cache/mozilla/firefox/oj8oro49.default-release/settings/main/ms-language-packs
+	8.0K	./.cache/mozilla/firefox/oj8oro49.default-release/settings/main
+	8.0K	./.cache/mozilla/firefox/oj8oro49.default-release/settings
+	96K	./.cache/mozilla/firefox/oj8oro49.default-release/thumbnails
+	20K	./.cache/mozilla/firefox/oj8oro49.default-release/cache2/doomed
+	39M	./.cache/mozilla/firefox/oj8oro49.default-release/cache2/entries
+	40M	./.cache/mozilla/firefox/oj8oro49.default-release/cache2
+	16M	./.cache/mozilla/firefox/oj8oro49.default-release/startupCache
+	69M	./.cache/mozilla/firefox/oj8oro49.default-release
+	69M	./.cache/mozilla/firefox
+	69M	./.cache/mozilla
+	948K	./.cache/gnome-software/3.20/firmware
+	948K	./.cache/gnome-software/3.20
+	948K	./.cache/gnome-software
+	532K	./.cache/wallpaper
+	848K	./.cache/gstreamer-1.0
+	0	./.cache/evolution/tasks/trash
+	0	./.cache/evolution/tasks
+	0	./.cache/evolution/sources/trash
+	0	./.cache/evolution/sources
+	0	./.cache/evolution/memos/trash
+	0	./.cache/evolution/memos
+	0	./.cache/evolution/mail/trash
+	0	./.cache/evolution/mail
+	0	./.cache/evolution/calendar/trash
+	0	./.cache/evolution/calendar
+	0	./.cache/evolution/addressbook/trash
+	0	./.cache/evolution/addressbook
+	0	./.cache/evolution
+	160K	./.cache/compizconfig-1
+	16K	./.cache/ibus/bus
+	16K	./.cache/ibus
+	76K	./.cache/upstart
+	0	./.cache/unity
+	72M	./.cache
+	20K	./.config/nautilus
+	4.0K	./.config/evolution/sources
+	4.0K	./.config/evolution
+	12K	./.config/libaccounts-glib
+	0	./.config/gnome-session/saved-session
+	0	./.config/gnome-session
+	72K	./.config/pulse
+	8.0K	./.config/compiz-1/compizconfig
+	8.0K	./.config/compiz-1
+	0	./.config/unity
+	4.0K	./.config/ibus/bus
+	4.0K	./.config/ibus
+	20K	./.config/dconf
+	0	./.config/upstart
+	20K	./.config/autostart
+	168K	./.config
+	105M	.
+	105M	total
+
+
+8.
+guest-yxqi1h@admin123-VirtualBox:~$ sort monthly -M
+	January
+	March
+	April
+	July
+	Aug
+	September
+	December
+
+guest-yxqi1h@admin123-VirtualBox:~$ sort -t ':' -k 2 new.txt
+
+	asparagas:green
+	jackfruit:green
+	lettuce:green
+	orange:orange
+	apple:red
+	cauliflower:white
+	raddish:white
+	banana:yellow
+	mango:yellow
+
+guest-yxqi1h@admin123-VirtualBox:~$ sort monthly -Mr
+	December
+	September
+	Aug
+	July
+	April
+	March
+	January
+
+guest-yxqi1h@admin123-VirtualBox:~$ sort monthly -c
+	sort: monthly:3: disorder: April
+
+
+9.
+guest-yxqi1h@admin123-VirtualBox:~$ grep Tom test.txt
+	Ground Control to Major Tom
+	Ground Control to Major Tom
+
+guest-yxqi1h@admin123-VirtualBox:~$ grep -cn Tom test.txt
+	2
+guest-yxqi1h@admin123-VirtualBox:~$ grep -v a monthly
+	April
+	December
+	September
+	July
+	Aug
+
+
+
+
+10.
+guest-yxqi1h@admin123-VirtualBox:~$ gzip test.txt
+guest-yxqi1h@admin123-VirtualBox:~$ ls
+	Desktop    Downloads         Music     Public     test.txt.gz
+	Documents  examples.desktop  Pictures  Templates  Videos
+
+
