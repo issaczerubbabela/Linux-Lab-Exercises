@@ -1,0 +1,84 @@
+1.
+#!/bin/bash
+
+var="hello world"
+echo $var
+
+guest-weiqxr@admin123-VirtualBox:~$ ./scr1.txt
+	hello world
+
+2.
+guest-weiqxr@admin123-VirtualBox:~$ echo `date`
+	Fri Aug 2 16:44:52 IST 2024
+guest-weiqxr@admin123-VirtualBox:~$ echo $(date)
+	Fri Aug 2 16:45:13 IST 2024
+
+3.
+guest-weiqxr@admin123-VirtualBox:~$ echo Ground Control to Major Tom > SpaceOddity.txt
+guest-weiqxr@admin123-VirtualBox:~$ echo Ground Control to Major Tom >> SpaceOddity.txt
+guest-weiqxr@admin123-VirtualBox:~$ cat SpaceOddity.txt 
+	Ground Control to Major Tom
+	Ground Control to Major Tom
+
+4.
+guest-weiqxr@admin123-VirtualBox:~$ wc < SpaceOddity.txt
+	 2 10 56
+
+5.
+guest-weiqxr@admin123-VirtualBox:~$ wc << EOF
+> Ground Control to Major Tom
+> Ground Control to Major Tom
+> EOF
+	 2 10 56
+
+5.
+guest-weiqxr@admin123-VirtualBox:~$ man 6 intro | sort
+	   Authors and copyright conditions
+	COLOPHON
+	       copyright  conditions.   Note  that these can be different from page to
+	DESCRIPTION
+	       description  of  the project, information about reporting bugs, and the
+	       grams available on the system.
+	       http://www.kernel.org/doc/man-pages/.
+	INTRO(6)                   Linux Programmer's Manual                  INTRO(6)
+	       intro - introduction to games
+	       latest    version    of    this    page,    can     be     found     at
+	Linux                             2007-10-23                          INTRO(6)
+	       Look at the header of the manual page  source  for  the  author(s)  and
+	NAME
+	NOTES
+	       page!
+	       Section  6  of the manual describes all the games and funny little pro‐
+	       This page is part of release 4.04 of the Linux  man-pages  project.   A
+
+6.
+guest-weiqxr@admin123-VirtualBox:~$ expr 5 + 6
+	11
+guest-weiqxr@admin123-VirtualBox:~$ expr 5 \* 8
+	40
+guest-weiqxr@admin123-VirtualBox:~$ expr $[5 + 6]
+	11
+
+7.
+guest-weiqxr@admin123-VirtualBox:~$ bc
+	bc 1.06.95
+	Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006 Free Software Foundation, Inc.
+	This is free software with ABSOLUTELY NO WARRANTY.
+	For details type `warranty'. 
+	7*9
+	63
+	scale=7
+	7/9
+	.7777777
+
+8.
+guest-weiqxr@admin123-VirtualBox:~$ echo $?
+	0
+guest-weiqxr@admin123-VirtualBox:~$ exit 5
+	exit
+guest-weiqxr@admin123-VirtualBox:~$ echo $?
+	5
+
+
+
+
