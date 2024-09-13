@@ -1,0 +1,58 @@
+    1  cat /etc/passwd
+    2  cat /etc/passwd | cut -d ":" -f 7
+    3  gnome-terminal
+    4  gnome-terminal $(nano)
+    5  nano answers.txt
+    6  vi user_shell.sh
+    7  ./user_shell.sh
+    8  chmod u+x user_shell.sh 
+    9  ./user_shell.sh
+   10  ls
+   11  cat user_shell.txt
+   12  vi user_shell.sh
+   13  ./user_shell.sh
+   14  vi user_shell.sh
+   15  ./user_shell.sh
+   16  cat /etc/passwd | cut -d ":" -f 7 | uniq -u
+   17  cat /etc/passwd | cut -d ":" -f 7
+   18  cat /etc/passwd | cut -d ":" -f 7 | uniq -c
+   19  cat /etc/passwd | cut -d ":" -f 7 | uniq 
+   20  cat /etc/passwd | cut -d ":" -f 7 | sort | uniq 
+   21  cat /etc/passwd | cut -d ":" -f 7 | sort | uniq | readarray unique_shells
+   22  echo ${unique_shells[@]}
+   23  cat /etc/passwd | cut -d ":" -f 7 | sort | uniq > readarray unique_shells
+   24  readarray unique_shells < cat /etc/passwd | cut -d ":" -f 7 | sort | uniq
+   25  readarray unique_shells < $(cat /etc/passwd | cut -d ":" -f 7 | sort | uniq)
+   26  cat /etc/passwd | cut -d ":" -f 7 | sort | uniq
+   27  cat /etc/passwd | cut -d ":" -f 7 | sort | uniq | readarray unique
+   28  echo $uniq
+   29  echo ${uniq}
+   30  echo ${uniq[@]}
+   31* 
+   32  cat /etc/passwd | cut -d ":" -f 7 | sort | uniq > unique_shells.txt
+   33  cat unique_shells.txt 
+   34  readarray uniqueshells < cat unique_shells.txt
+   35  readarray uniqueshells < unique_shells.txt
+   36  echo ${uniqueshells[@]}
+   37  for i in uniqueshells; do touch '$i.txt'; done
+   38  ls
+   39  for i in uniqueshells; do touch $i.txt; done
+   40  ls
+   41  for i in uniqueshells; do echo $i; done
+   42  for i in uniqueshells; do echo $i ; done
+   43  for i in uniqueshells; do echo '$i' ; done
+   44  for i in uniqueshells; do echo $[i] ; done
+   45  for i in uniqueshells; do echo $i ; done
+   46  for i in uniqueshells; do echo "$i.txt" ; done
+   47  for i in ${uniqueshells[@]}; do echo "$i.txt" ; done
+   48  for i in ${uniqueshells[@]}; do touch "$i.txt" ; done
+   49  for i in ${uniqueshells[@]}; do touch $(basename"$i.txt") ; done
+   50  for i in ${uniqueshells[@]}; do touch "$(basename $i).txt" ; done
+   51  ls
+   52  for i in user_shell.txt; do user_name=$(echo $i | cut -d ":" 1); done
+   53  for i in 'user_shell.txt'; do user_name=$(echo $i | cut -d ":" 1); shell=$(echo $i | cut -d ":" 2); echo $shell; done
+   54  for i in 'user_shell.txt'; do user_name=$(echo $i | cut -d ":" -f 1); shell=$(echo $i | cut -d ":" -f 2); echo $shell; done
+   55  file='user_shell.txt'; for i in $file; do user_name=$(echo $i | cut -d ":" -f 1); shell=$(echo $i | cut -d ":" -f 2); echo $shell; done
+   56  file=$'user_shell.txt'; for i in $file; do user_name=$(echo $i | cut -d ":" -f 1); shell=$(echo $i | cut -d ":" -f 2); echo $shell; done
+   57* cat user_shell.txt | while read i; do user_name=$(echo $i | cut -d ":" -f 1); shell=$(echo $i | cut -d ":" -f 2); his; done
+   58  history > hist.txt

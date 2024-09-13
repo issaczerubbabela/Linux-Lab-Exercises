@@ -12,4 +12,7 @@ cat user_shell.txt | while read i
 do 
 user_name=$(echo $i | cut -d ":" -f 1) 
 shell=$(echo $i | cut -d ":" -f 2) 
+case $shell in
+${uniqueshells[0]}) echo $user_name >> "$(basename ${
+esac
 done 
