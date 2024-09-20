@@ -144,3 +144,5 @@ guest-gicfjq@admin123-VirtualBox:~$ cat /dev/null
 
 
 9. Creating Text Menu
+
+10. Select Command
